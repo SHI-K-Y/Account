@@ -3,7 +3,6 @@
 .nav-menu {
   position: fixed;
   left: 0;
-  top: 0;
   width: $nav-width;
   height: 100vh;
   background: $nav-background;
@@ -71,10 +70,12 @@
 
 @media only screen and (max-width: 900px) {
   .nav-menu {
-    left: -$nav-width;
+    left: auto;
+    right: -$nav-width;
 
     &.active {
-      left: 0;
+      left: auto;
+      right: 0;
     }
   }
 
@@ -82,7 +83,8 @@
     display: block;
     position: fixed;
     top: 1rem;
-    left: 1rem;
+    left: auto;
+    right: 1rem;
     background: none;
     border: none;
     font-size: 1.5rem;
