@@ -1,5 +1,4 @@
 @import "_nav";
-@import "_overview";
 @import "_responsive";
 
 :root {
@@ -164,6 +163,12 @@ body {
     background: var(--logo-color);
     color: white;
   }
+}
+
+.preview {
+  margin-top: 10px;
+  //text-decoration: none;
+  color: var(--logo-color);
 }
 
 .instructions,
