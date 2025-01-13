@@ -267,7 +267,7 @@ body {
   margin-left: 250px;
   padding: 2rem;
 
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     margin-left: 0;
   }
 }

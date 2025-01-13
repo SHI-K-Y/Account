@@ -271,3 +271,33 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    margin-left: 1.875rem !important;
+  }
+
+  .content-wrapper {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .overview-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .total-assets {
+    padding: 1.5rem;
+
+    .month-summary {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  .assets-grid {
+    grid-template-columns: 1fr;
+  }
+}
