@@ -2,78 +2,78 @@ body {
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;
-  //font-family: "Roboto", sans-serif;
 }
 
 .content-wrapper {
-  margin-left: 250px;
-  padding: 2rem;
+  margin-left: 15.625rem; // 保持 250px/16
+  padding: 2em;
 }
 
 .overview-header {
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   h1 {
-    font-size: 2rem;
+    font-size: 2em;
     color: #333;
     margin: 0;
   }
 
   .date-selector button {
-    padding: 0.8rem 1.5rem;
+    padding: 0.8em 1.5em;
     background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 0.0625rem solid #ddd; // 保持精確的 1px
+    border-radius: 0.5em;
     cursor: pointer;
 
     i {
-      margin-left: 0.5rem;
+      margin-left: 0.5em;
     }
   }
 }
 
 .total-assets {
   background: white;
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.625em;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 
   // ...existing code...
 }
 
 .assets-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  gap: 1.5em;
+  margin-bottom: 2em;
 
   // ...existing code...
 }
 
 .recent-transactions {
   background: white;
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.625em;
+  padding: 1.5em;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 
   // ...existing code...
 }
 
 // Responsive styles
-@media (max-width: 768px) {
+@media (max-width: 48em) {
+  // 768px/16
   .content-wrapper {
     margin-left: 0;
-    padding: 1rem;
+    padding: 1em;
   }
 
   .total-assets {
     .month-summary {
       flex-direction: column;
-      gap: 1rem;
+      gap: 1em;
     }
   }
 
