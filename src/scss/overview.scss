@@ -242,6 +242,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  h1 {
+    margin-left: 30px !important;
+  }
+
   .content-wrapper {
     margin-left: 0;
     padding: 1rem;
