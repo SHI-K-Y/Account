@@ -40,7 +40,8 @@ $breakpoints: (
 .main-content {
   @include respond-to("medium") {
     padding: 4rem 1rem;
-    min-height: 0;
+    min-height: 0 !important;
+    margin-top: 0px !important;
 
     .title {
       font-size: 2rem;
