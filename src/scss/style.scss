@@ -121,7 +121,7 @@ body {
 .home-image {
   width: 250px;
   height: 250px;
-  background: url("../assets/image/accounting.png") no-repeat center center;
+  background: url("./assets/image/accounting.png") no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -134,7 +134,7 @@ body {
   .example-image {
     width: 250px;
     height: 250px;
-    background: url("../assets/image/verified-account.png") no-repeat center center;
+    background: url("./assets/image/verified-account.png") no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
