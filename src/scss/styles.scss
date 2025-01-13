@@ -1,13 +1,15 @@
 // Base styles and variables
-@import "variables";
-@import "common";
+@import "./variables";
+
+// Common styles
+@import "./common";
 
 // Layout components
-@import "nav";
+@import "./account-nav";
 
 // Page specific styles
-@import "overview";
-@import "transactions";
-@import "category";
-@import "reports";
-@import "add-transaction";
+@import "./overview";
+@import "./transactions";
+@import "./category";
+@import "./reports";
+@import "./add-transaction";
