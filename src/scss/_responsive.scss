@@ -16,6 +16,12 @@ $breakpoints: (
 }
 
 // Home page responsive styles
+.logo {
+  @include respond-to("medium") {
+    font-size: 1.5rem !important;
+  }
+}
+
 .navbar {
   @include respond-to("medium") {
     padding: 0.8rem 1rem;
