@@ -1,0 +1,165 @@
+@import "nav";
+
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.content-wrapper {
+  margin-left: 250px;
+  padding: 2rem;
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+  }
+
+  .add-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background: #333;
+    }
+  }
+}
+
+.transaction-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+
+  .date-filter button {
+    padding: 0.5rem 1rem;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+
+    i {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .type-filter {
+    display: flex;
+    gap: 1rem;
+
+    button {
+      padding: 0.5rem 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background: white;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &.active {
+        background: #000;
+        color: white;
+        border-color: #000;
+      }
+    }
+  }
+}
+
+.transaction-list {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  .transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+
+    .transaction-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .category {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        i {
+          width: 30px;
+          height: 30px;
+          background: #f0f0f0;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #666;
+        }
+      }
+
+      .details {
+        .description {
+          font-weight: 500;
+          margin-bottom: 0.25rem;
+        }
+
+        .date {
+          font-size: 0.875rem;
+          color: #666;
+        }
+      }
+    }
+
+    .amount {
+      font-weight: bold;
+
+      &.expense {
+        color: #e74c3c;
+      }
+
+      &.income {
+        color: #27ae60;
+      }
+    }
+  }
+}
+
+// Responsive styles
+@media (max-width: 768px) {
+  .content-wrapper {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .transaction-filters {
+    flex-direction: column;
+    gap: 1rem;
+
+    .type-filter {
+      justify-content: space-between;
+    }
+  }
+}
