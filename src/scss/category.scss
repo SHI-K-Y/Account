@@ -22,6 +22,7 @@ body {
     font-size: 2rem;
     color: #333;
     margin: 0;
+    margin-left: 30px;
   }
 
   .type-switcher {
@@ -202,7 +203,7 @@ body {
 // Responsive styles
 @media (max-width: 768px) {
   h1 {
-    margin-left: 1.875rem !important;
+    margin-left: 1.875rem;
   }
 
   .content-wrapper {
@@ -226,7 +227,7 @@ body {
 
 @media only screen and (max-width: 900px) {
   h1 {
-    margin-left: 1.875rem !important;
+    margin-left: 1.875rem;
   }
 
   .content-wrapper {
