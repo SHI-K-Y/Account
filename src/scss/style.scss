@@ -1,6 +1,6 @@
-@import "nav";
-@import "overview";
-// 其他樣式導入...
+@import "_nav";
+@import "_overview";
+@import "_responsive";
 
 :root {
   --body-color: #f4f4f9;
@@ -95,6 +95,7 @@ body {
   min-height: calc(100vh - 80px);
   margin-top: 80px;
   text-align: center;
+  margin-left: 0px;
 }
 
 .title {
@@ -294,5 +295,3 @@ footer {
     color: var(--footer-text-color);
   }
 }
-
-@import "responsive";
