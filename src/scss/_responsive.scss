@@ -68,8 +68,8 @@ $breakpoints: (
     }
 
     .example-image {
-      width: 150px;
-      height: 150px;
+      width: 150px !important;
+      height: 150px !important;
     }
   }
 }
