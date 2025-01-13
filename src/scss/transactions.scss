@@ -195,10 +195,10 @@ body {
 
     .date-filter {
       display: flex;
-      flex-direction: row; // 確保水平排列
+      flex-direction: row;
       justify-content: space-between;
-      align-items: center; // 確保垂直置中對齊
-      width: 100%;
+      align-items: center;
+      width: 95%;
       gap: 1rem;
 
       .current-month {
