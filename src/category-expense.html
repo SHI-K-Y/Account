@@ -8,89 +8,94 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   </head>
   <body>
-    <button class="menu-toggle">
-      <i class="fas fa-bars"></i>
-    </button>
-
-    <nav class="nav-menu">
-      <a href="index.html" class="logo">Keep Your Wallet Safe!</a>
-      <ul class="nav-items">
-        <li class="nav-item">
-          <a href="overview.html">
-            <i class="fas fa-wallet"></i>
-            <span>資產總覽</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="transactions.html">
-            <i class="fas fa-list"></i>
-            <span>交易記錄</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="category-expense.html">
-            <i class="fas fa-tags"></i>
-            <span>類別設定</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="reports.html">
-            <i class="fas fa-chart-pie"></i>
-            <span>財務報表</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="nav-overlay"></div>
-
-    <!-- Include navigation component -->
-    <div class="content-wrapper">
-      <div class="page-header">
-        <h1>類別設定</h1>
-        <div class="type-switcher">
-          <a href="category-expense.html" class="active">支出</a>
-          <a href="category-income.html">收入</a>
-        </div>
-      </div>
-
-      <div class="category-list">
-        <div class="category-item">
-          <div class="category-info">
-            <i class="fas fa-utensils"></i>
-            <span>餐飲</span>
-          </div>
-          <button class="edit-btn">
-            <i class="fas fa-ellipsis-v"></i>
-          </button>
-        </div>
-
-        <div class="category-item">
-          <div class="category-info">
-            <i class="fas fa-bus"></i>
-            <span>交通</span>
-          </div>
-          <button class="edit-btn">
-            <i class="fas fa-ellipsis-v"></i>
-          </button>
-        </div>
-
-        <div class="category-item">
-          <div class="category-info">
-            <i class="fas fa-home"></i>
-            <span>住宿</span>
-          </div>
-          <button class="edit-btn">
-            <i class="fas fa-ellipsis-v"></i>
-          </button>
-        </div>
-      </div>
-
-      <button class="add-category-btn">
-        <i class="fas fa-plus"></i>
-        新增類別
+    <div class="page-container">
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
       </button>
-    </div>
 
+      <nav class="nav-menu">
+        <a href="index.html" class="logo">Keep Your Wallet Safe!</a>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="overview.html">
+              <i class="fas fa-wallet"></i>
+              <span>資產總覽</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="transactions.html">
+              <i class="fas fa-list"></i>
+              <span>交易記錄</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="category-expense.html">
+              <i class="fas fa-tags"></i>
+              <span>類別設定</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="reports.html">
+              <i class="fas fa-chart-pie"></i>
+              <span>財務報表</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-overlay"></div>
+
+      <!-- Include navigation component -->
+      <div class="content-wrapper">
+        <div class="page-header">
+          <h1>類別設定</h1>
+          <div class="type-switcher">
+            <a href="category-expense.html" class="active">支出</a>
+            <a href="category-income.html">收入</a>
+          </div>
+        </div>
+
+        <div class="category-list">
+          <div class="category-item">
+            <div class="category-info">
+              <i class="fas fa-utensils"></i>
+              <span>餐飲</span>
+            </div>
+            <button class="edit-btn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </div>
+
+          <div class="category-item">
+            <div class="category-info">
+              <i class="fas fa-bus"></i>
+              <span>交通</span>
+            </div>
+            <button class="edit-btn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </div>
+
+          <div class="category-item">
+            <div class="category-info">
+              <i class="fas fa-home"></i>
+              <span>住宿</span>
+            </div>
+            <button class="edit-btn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </div>
+        </div>
+
+        <button class="add-category-btn">
+          <i class="fas fa-plus"></i>
+          新增類別
+        </button>
+      </div>
+      <footer>
+        <p>Keep Your Wallet Safe!-荷包拯救計劃</p>
+        <p>Copyright &copy; 2025 Kunyan Shi.</p>
+      </footer>
+    </div>
     <!-- Category Edit Modal -->
     <div class="modal" id="editModal">
       <div class="modal-content">

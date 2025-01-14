@@ -9,153 +9,159 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
-    <button class="menu-toggle">
-      <i class="fas fa-bars"></i>
-    </button>
+    <div class="page-container">
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
 
-    <nav class="nav-menu">
-      <a href="index.html" class="logo">Keep Your Wallet Safe!</a>
-      <ul class="nav-items">
-        <li class="nav-item">
-          <a href="overview.html">
-            <i class="fas fa-wallet"></i>
-            <span>資產總覽</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="transactions.html">
-            <i class="fas fa-list"></i>
-            <span>交易記錄</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="category-expense.html">
-            <i class="fas fa-tags"></i>
-            <span>類別設定</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="reports.html">
-            <i class="fas fa-chart-pie"></i>
-            <span>財務報表</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="nav-overlay"></div>
+      <nav class="nav-menu">
+        <a href="index.html" class="logo">Keep Your Wallet Safe!</a>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="overview.html">
+              <i class="fas fa-wallet"></i>
+              <span>資產總覽</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="transactions.html">
+              <i class="fas fa-list"></i>
+              <span>交易記錄</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="category-expense.html">
+              <i class="fas fa-tags"></i>
+              <span>類別設定</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="reports.html">
+              <i class="fas fa-chart-pie"></i>
+              <span>財務報表</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-overlay"></div>
 
-    <div class="content-wrapper">
-      <div class="overview-header">
-        <h1>資產總覽</h1>
-        <div class="date-selector">
-          <button>2024年1月 <i class="fas fa-calendar"></i></button>
-        </div>
-      </div>
-
-      <div class="total-assets">
-        <div class="total-amount">
-          <h2>總資產</h2>
-          <div class="amount">$135,000</div>
-        </div>
-        <div class="month-summary">
-          <div class="summary-item income">
-            <span class="label">本月收入</span>
-            <span class="value">+$30,000</span>
-          </div>
-          <div class="summary-item expense">
-            <span class="label">本月支出</span>
-            <span class="value">-$15,000</span>
+      <div class="content-wrapper">
+        <div class="overview-header">
+          <h1>資產總覽</h1>
+          <div class="date-selector">
+            <button>2024年1月 <i class="fas fa-calendar"></i></button>
           </div>
         </div>
-      </div>
 
-      <div class="assets-grid">
-        <div class="asset-card">
-          <div class="card-header">
-            <i class="fas fa-piggy-bank"></i>
-            <h3>存款</h3>
+        <div class="total-assets">
+          <div class="total-amount">
+            <h2>總資產</h2>
+            <div class="amount">$135,000</div>
           </div>
-          <div class="card-content">
-            <div class="main-amount">$100,000</div>
-            <div class="accounts">
-              <div class="account-item">
-                <span>台新銀行</span>
-                <span>$60,000</span>
+          <div class="month-summary">
+            <div class="summary-item income">
+              <span class="label">本月收入</span>
+              <span class="value">+$30,000</span>
+            </div>
+            <div class="summary-item expense">
+              <span class="label">本月支出</span>
+              <span class="value">-$15,000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="assets-grid">
+          <div class="asset-card">
+            <div class="card-header">
+              <i class="fas fa-piggy-bank"></i>
+              <h3>存款</h3>
+            </div>
+            <div class="card-content">
+              <div class="main-amount">$100,000</div>
+              <div class="accounts">
+                <div class="account-item">
+                  <span>台新銀行</span>
+                  <span>$60,000</span>
+                </div>
+                <div class="account-item">
+                  <span>中國信託</span>
+                  <span>$40,000</span>
+                </div>
               </div>
-              <div class="account-item">
-                <span>中國信託</span>
-                <span>$40,000</span>
+            </div>
+          </div>
+
+          <div class="asset-card">
+            <div class="card-header">
+              <i class="fas fa-wallet"></i>
+              <h3>現金</h3>
+            </div>
+            <div class="card-content">
+              <div class="main-amount">$5,000</div>
+            </div>
+          </div>
+
+          <div class="asset-card">
+            <div class="card-header">
+              <i class="fas fa-credit-card"></i>
+              <h3>信用卡</h3>
+            </div>
+            <div class="card-content">
+              <div class="main-amount expense">-$20,000</div>
+              <div class="accounts">
+                <div class="account-item">
+                  <span>台新銀行</span>
+                  <span class="expense">-$12,000</span>
+                </div>
+                <div class="account-item">
+                  <span>中國信託</span>
+                  <span class="expense">-$8,000</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="asset-card">
-          <div class="card-header">
-            <i class="fas fa-wallet"></i>
-            <h3>現金</h3>
+        <div class="recent-transactions">
+          <div class="section-header">
+            <h2>最近交易</h2>
+            <a href="transactions.html" class="view-all">查看全部</a>
           </div>
-          <div class="card-content">
-            <div class="main-amount">$5,000</div>
-          </div>
-        </div>
+          <div class="transaction-list">
+            <div class="transaction-item expense">
+              <div class="transaction-info">
+                <div class="category">
+                  <i class="fas fa-utensils"></i>
+                  <span>餐飲</span>
+                </div>
+                <div class="details">
+                  <div class="description">午餐</div>
+                  <div class="date">2024/01/15</div>
+                </div>
+              </div>
+              <div class="amount expense">-$100</div>
+            </div>
 
-        <div class="asset-card">
-          <div class="card-header">
-            <i class="fas fa-credit-card"></i>
-            <h3>信用卡</h3>
-          </div>
-          <div class="card-content">
-            <div class="main-amount expense">-$20,000</div>
-            <div class="accounts">
-              <div class="account-item">
-                <span>台新銀行</span>
-                <span class="expense">-$12,000</span>
+            <div class="transaction-item income">
+              <div class="transaction-info">
+                <div class="category">
+                  <i class="fas fa-wallet"></i>
+                  <span>薪資</span>
+                </div>
+                <div class="details">
+                  <div class="description">1月薪資</div>
+                  <div class="date">2024/01/05</div>
+                </div>
               </div>
-              <div class="account-item">
-                <span>中國信託</span>
-                <span class="expense">-$8,000</span>
-              </div>
+              <div class="amount income">+$30,000</div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="recent-transactions">
-        <div class="section-header">
-          <h2>最近交易</h2>
-          <a href="transactions.html" class="view-all">查看全部</a>
-        </div>
-        <div class="transaction-list">
-          <div class="transaction-item expense">
-            <div class="transaction-info">
-              <div class="category">
-                <i class="fas fa-utensils"></i>
-                <span>餐飲</span>
-              </div>
-              <div class="details">
-                <div class="description">午餐</div>
-                <div class="date">2024/01/15</div>
-              </div>
-            </div>
-            <div class="amount expense">-$100</div>
-          </div>
-
-          <div class="transaction-item income">
-            <div class="transaction-info">
-              <div class="category">
-                <i class="fas fa-wallet"></i>
-                <span>薪資</span>
-              </div>
-              <div class="details">
-                <div class="description">1月薪資</div>
-                <div class="date">2024/01/05</div>
-              </div>
-            </div>
-            <div class="amount income">+$30,000</div>
-          </div>
-        </div>
-      </div>
+      <footer>
+        <p>Keep Your Wallet Safe!-荷包拯救計劃</p>
+        <p>Copyright &copy; 2025 Kunyan Shi.</p>
+      </footer>
     </div>
     <script src="js/main.js"></script>
   </body>

@@ -8,90 +8,96 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   </head>
   <body>
-    <button class="menu-toggle">
-      <i class="fas fa-bars"></i>
-    </button>
+    <div class="page-container">
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
 
-    <nav class="nav-menu">
-      <a href="index.html" class="logo">Keep Your Wallet Safe!</a>
-      <ul class="nav-items">
-        <li class="nav-item">
-          <a href="overview.html">
-            <i class="fas fa-wallet"></i>
-            <span>資產總覽</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="transactions.html">
-            <i class="fas fa-list"></i>
-            <span>交易記錄</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="category-expense.html">
-            <i class="fas fa-tags"></i>
-            <span>類別設定</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="reports.html">
-            <i class="fas fa-chart-pie"></i>
-            <span>財務報表</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="nav-overlay"></div>
+      <nav class="nav-menu">
+        <a href="index.html" class="logo">Keep Your Wallet Safe!</a>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="overview.html">
+              <i class="fas fa-wallet"></i>
+              <span>資產總覽</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="transactions.html">
+              <i class="fas fa-list"></i>
+              <span>交易記錄</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="category-expense.html">
+              <i class="fas fa-tags"></i>
+              <span>類別設定</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="reports.html">
+              <i class="fas fa-chart-pie"></i>
+              <span>財務報表</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-overlay"></div>
 
-    <!-- Include navigation component -->
-    <div class="content-wrapper">
-      <div class="page-header">
-        <a href="transactions.html" class="back-btn">
-          <i class="fas fa-arrow-left"></i>
-        </a>
-        <h1>新增交易</h1>
+      <!-- Include navigation component -->
+      <div class="content-wrapper">
+        <div class="page-header">
+          <a href="transactions.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <h1>新增交易</h1>
+        </div>
+
+        <form class="transaction-form">
+          <div class="form-group">
+            <label>交易類型</label>
+            <div class="type-selector">
+              <button type="button" class="type-btn active" data-type="expense">支出</button>
+              <button type="button" class="type-btn" data-type="income">收入</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>類別</label>
+            <div class="category-selector">
+              <select required>
+                <option value="">選擇類別</option>
+                <option value="food">餐飲</option>
+                <option value="transport">交通</option>
+                <option value="entertainment">娛樂</option>
+                <!-- More options will be added dynamically -->
+              </select>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>金額</label>
+            <input type="number" placeholder="請輸入金額" required />
+          </div>
+
+          <div class="form-group">
+            <label>日期</label>
+            <input type="date" required />
+          </div>
+
+          <div class="form-group">
+            <label>備註</label>
+            <input type="text" placeholder="新增備註" />
+          </div>
+
+          <button type="submit" class="submit-btn">儲存</button>
+        </form>
       </div>
-
-      <form class="transaction-form">
-        <div class="form-group">
-          <label>交易類型</label>
-          <div class="type-selector">
-            <button type="button" class="type-btn active" data-type="expense">支出</button>
-            <button type="button" class="type-btn" data-type="income">收入</button>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label>類別</label>
-          <div class="category-selector">
-            <select required>
-              <option value="">選擇類別</option>
-              <option value="food">餐飲</option>
-              <option value="transport">交通</option>
-              <option value="entertainment">娛樂</option>
-              <!-- More options will be added dynamically -->
-            </select>
-            <i class="fas fa-chevron-down"></i>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label>金額</label>
-          <input type="number" placeholder="請輸入金額" required />
-        </div>
-
-        <div class="form-group">
-          <label>日期</label>
-          <input type="date" required />
-        </div>
-
-        <div class="form-group">
-          <label>備註</label>
-          <input type="text" placeholder="新增備註" />
-        </div>
-
-        <button type="submit" class="submit-btn">儲存</button>
-      </form>
+      <footer>
+        <p>Keep Your Wallet Safe!-荷包拯救計劃</p>
+        <p>Copyright &copy; 2025 Kunyan Shi.</p>
+      </footer>
     </div>
     <script src="js/main.js"></script>
   </body>

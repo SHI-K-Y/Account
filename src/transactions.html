@@ -8,92 +8,98 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   </head>
   <body>
-    <button class="menu-toggle">
-      <i class="fas fa-bars"></i>
-    </button>
+    <div class="page-container">
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
 
-    <nav class="nav-menu">
-      <a href="index.html" class="logo">Keep Your Wallet Safe!</a>
-      <ul class="nav-items">
-        <li class="nav-item">
-          <a href="overview.html">
-            <i class="fas fa-wallet"></i>
-            <span>資產總覽</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="transactions.html">
-            <i class="fas fa-list"></i>
-            <span>交易記錄</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="category-expense.html">
-            <i class="fas fa-tags"></i>
-            <span>類別設定</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="reports.html">
-            <i class="fas fa-chart-pie"></i>
-            <span>財務報表</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="nav-overlay"></div>
-
-    <!-- Include navigation component -->
-    <div class="content-wrapper">
-      <div class="transactions-header">
-        <h1>交易記錄</h1>
-      </div>
-
-      <div class="transaction-filters">
-        <div class="date-filter">
-          <button class="current-month">2024年1月 <i class="fas fa-calendar"></i></button>
-          <a href="add-transaction.html" class="add-btn">
-            <i class="fas fa-plus"></i>
-            新增交易
-          </a>
-        </div>
-        <div class="type-filter">
-          <button class="active">全部</button>
-          <button>支出</button>
-          <button>收入</button>
-        </div>
-      </div>
-
-      <div class="transaction-list">
-        <!-- Transaction items will be added here -->
-        <div class="transaction-item expense">
-          <div class="transaction-info">
-            <div class="category">
-              <i class="fas fa-utensils"></i>
-              <span>餐飲</span>
-            </div>
-            <div class="details">
-              <div class="description">午餐</div>
-              <div class="date">2024/01/15</div>
-            </div>
-          </div>
-          <div class="amount expense">-$100</div>
-        </div>
-
-        <div class="transaction-item income">
-          <div class="transaction-info">
-            <div class="category">
+      <nav class="nav-menu">
+        <a href="index.html" class="logo">Keep Your Wallet Safe!</a>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="overview.html">
               <i class="fas fa-wallet"></i>
-              <span>薪資</span>
-            </div>
-            <div class="details">
-              <div class="description">1月薪資</div>
-              <div class="date">2024/01/05</div>
-            </div>
+              <span>資產總覽</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="transactions.html">
+              <i class="fas fa-list"></i>
+              <span>交易記錄</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="category-expense.html">
+              <i class="fas fa-tags"></i>
+              <span>類別設定</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="reports.html">
+              <i class="fas fa-chart-pie"></i>
+              <span>財務報表</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-overlay"></div>
+
+      <!-- Include navigation component -->
+      <div class="content-wrapper">
+        <div class="transactions-header">
+          <h1>交易記錄</h1>
+        </div>
+
+        <div class="transaction-filters">
+          <div class="date-filter">
+            <button class="current-month">2024年1月 <i class="fas fa-calendar"></i></button>
+            <a href="add-transaction.html" class="add-btn">
+              <i class="fas fa-plus"></i>
+              新增交易
+            </a>
           </div>
-          <div class="amount income">+$30,000</div>
+          <div class="type-filter">
+            <button class="active">全部</button>
+            <button>支出</button>
+            <button>收入</button>
+          </div>
+        </div>
+
+        <div class="transaction-list">
+          <!-- Transaction items will be added here -->
+          <div class="transaction-item expense">
+            <div class="transaction-info">
+              <div class="category">
+                <i class="fas fa-utensils"></i>
+                <span>餐飲</span>
+              </div>
+              <div class="details">
+                <div class="description">午餐</div>
+                <div class="date">2024/01/15</div>
+              </div>
+            </div>
+            <div class="amount expense">-$100</div>
+          </div>
+
+          <div class="transaction-item income">
+            <div class="transaction-info">
+              <div class="category">
+                <i class="fas fa-wallet"></i>
+                <span>薪資</span>
+              </div>
+              <div class="details">
+                <div class="description">1月薪資</div>
+                <div class="date">2024/01/05</div>
+              </div>
+            </div>
+            <div class="amount income">+$30,000</div>
+          </div>
         </div>
       </div>
+      <footer>
+        <p>Keep Your Wallet Safe!-荷包拯救計劃</p>
+        <p>Copyright &copy; 2025 Kunyan Shi.</p>
+      </footer>
     </div>
     <script src="js/main.js"></script>
   </body>

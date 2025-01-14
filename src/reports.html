@@ -9,104 +9,109 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
-    <button class="menu-toggle">
-      <i class="fas fa-bars"></i>
-    </button>
+    <div class="page-container">
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
 
-    <nav class="nav-menu">
-      <a href="index.html" class="logo">Keep Your Wallet Safe!</a>
-      <ul class="nav-items">
-        <li class="nav-item">
-          <a href="overview.html">
-            <i class="fas fa-wallet"></i>
-            <span>資產總覽</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="transactions.html">
-            <i class="fas fa-list"></i>
-            <span>交易記錄</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="category-expense.html">
-            <i class="fas fa-tags"></i>
-            <span>類別設定</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="reports.html">
-            <i class="fas fa-chart-pie"></i>
-            <span>財務報表</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="nav-overlay"></div>
+      <nav class="nav-menu">
+        <a href="index.html" class="logo">Keep Your Wallet Safe!</a>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="overview.html">
+              <i class="fas fa-wallet"></i>
+              <span>資產總覽</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="transactions.html">
+              <i class="fas fa-list"></i>
+              <span>交易記錄</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="category-expense.html">
+              <i class="fas fa-tags"></i>
+              <span>類別設定</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="reports.html">
+              <i class="fas fa-chart-pie"></i>
+              <span>財務報表</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-overlay"></div>
 
-    <div class="content-wrapper">
-      <div class="reports-header">
-        <h1>財務報表</h1>
-      </div>
-
-      <div class="report-filters">
-        <div class="date-filter">
-          <button>2024年1月 <i class="fas fa-calendar"></i></button>
+      <div class="content-wrapper">
+        <div class="reports-header">
+          <h1>財務報表</h1>
         </div>
-      </div>
 
-      <div class="report-section">
-        <h2>收支概況</h2>
-        <div class="chart-container">
-          <canvas id="incomeExpenseChart"></canvas>
-        </div>
-        <div class="summary">
-          <div class="summary-item">
-            <div class="label">收入</div>
-            <div class="value income">$30,000</div>
-          </div>
-          <div class="summary-item">
-            <div class="label">支出</div>
-            <div class="value expense">$15,000</div>
-          </div>
-          <div class="summary-item">
-            <div class="label">結餘</div>
-            <div class="value balance">$15,000</div>
+        <div class="report-filters">
+          <div class="date-filter">
+            <button>2024年1月 <i class="fas fa-calendar"></i></button>
           </div>
         </div>
-      </div>
 
-      <div class="report-section">
-        <h2>支出分類統計</h2>
-        <div class="chart-container">
-          <canvas id="expenseCategoryChart"></canvas>
-        </div>
-        <div class="category-breakdown">
-          <div class="category-item">
-            <div class="category-info">
-              <i class="fas fa-utensils"></i>
-              <span>餐飲</span>
+        <div class="report-section">
+          <h2>收支概況</h2>
+          <div class="chart-container">
+            <canvas id="incomeExpenseChart"></canvas>
+          </div>
+          <div class="summary">
+            <div class="summary-item">
+              <div class="label">收入</div>
+              <div class="value income">$30,000</div>
             </div>
-            <div class="amount">$5,000</div>
-          </div>
-          <div class="category-item">
-            <div class="category-info">
-              <i class="fas fa-bus"></i>
-              <span>交通</span>
+            <div class="summary-item">
+              <div class="label">支出</div>
+              <div class="value expense">$15,000</div>
             </div>
-            <div class="amount">$3,000</div>
-          </div>
-          <div class="category-item">
-            <div class="category-info">
-              <i class="fas fa-home"></i>
-              <span>住宿</span>
+            <div class="summary-item">
+              <div class="label">結餘</div>
+              <div class="value balance">$15,000</div>
             </div>
-            <div class="amount">$7,000</div>
+          </div>
+        </div>
+
+        <div class="report-section">
+          <h2>支出分類統計</h2>
+          <div class="chart-container">
+            <canvas id="expenseCategoryChart"></canvas>
+          </div>
+          <div class="category-breakdown">
+            <div class="category-item">
+              <div class="category-info">
+                <i class="fas fa-utensils"></i>
+                <span>餐飲</span>
+              </div>
+              <div class="amount">$5,000</div>
+            </div>
+            <div class="category-item">
+              <div class="category-info">
+                <i class="fas fa-bus"></i>
+                <span>交通</span>
+              </div>
+              <div class="amount">$3,000</div>
+            </div>
+            <div class="category-item">
+              <div class="category-info">
+                <i class="fas fa-home"></i>
+                <span>住宿</span>
+              </div>
+              <div class="amount">$7,000</div>
+            </div>
           </div>
         </div>
       </div>
+      <footer>
+        <p>Keep Your Wallet Safe!-荷包拯救計劃</p>
+        <p>&copy; 2025 Kunyan Shi.</p>
+      </footer>
     </div>
-
     <script>
       // Charts initialization
       document.addEventListener("DOMContentLoaded", function () {
