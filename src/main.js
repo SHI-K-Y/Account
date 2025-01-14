@@ -1,4 +1,3 @@
-// FAQ toggle functionality
 document.querySelectorAll(".faq-item").forEach((item) => {
   item.addEventListener("click", () => {
     item.classList.toggle("active");
@@ -13,7 +12,6 @@ document.querySelectorAll(".faq-item").forEach((item) => {
   });
 });
 
-// Mobile menu toggle
 document.querySelector(".mobile-menu-toggle").addEventListener("click", () => {
   document.querySelector(".mobile-nav").classList.toggle("active");
   const icon = document.querySelector(".mobile-menu-toggle i");
@@ -21,7 +19,6 @@ document.querySelector(".mobile-menu-toggle").addEventListener("click", () => {
   icon.classList.toggle("fa-times");
 });
 
-// Close mobile menu when clicking on a link
 document.querySelectorAll(".mobile-nav a").forEach((link) => {
   link.addEventListener("click", () => {
     document.querySelector(".mobile-nav").classList.remove("active");

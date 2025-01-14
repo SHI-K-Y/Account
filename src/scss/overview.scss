@@ -7,7 +7,7 @@ body {
 }
 
 .content-wrapper {
-  margin-left: 15.625rem; // 250px/16
+  margin-left: 15.625rem;
   padding: 2rem;
 }
 
@@ -26,8 +26,8 @@ body {
   .date-selector button {
     padding: 0.5rem 1rem;
     background: white;
-    border: 0.0625rem solid #ddd; // 1px
-    border-radius: 0.3125rem; // 5px/16
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.3125rem;
     cursor: pointer;
 
     i {
@@ -38,7 +38,7 @@ body {
 
 .total-assets {
   background: white;
-  border-radius: 0.625rem; // 10px/16
+  border-radius: 0.625rem;
   padding: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
@@ -92,13 +92,13 @@ body {
 
 .assets-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr)); // 300px/16
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
   gap: 1.5rem;
   margin-bottom: 2rem;
 
   .asset-card {
     background: white;
-    border-radius: 0.625rem; // 10px/16
+    border-radius: 0.625rem;
     padding: 1.5rem;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 
@@ -135,7 +135,7 @@ body {
           display: flex;
           justify-content: space-between;
           padding: 0.5rem 0;
-          border-bottom: 0.0625rem solid #eee; // 1px
+          border-bottom: 0.0625rem solid #eee;
 
           &:last-child {
             border-bottom: none;
@@ -152,7 +152,7 @@ body {
 
 .recent-transactions {
   background: white;
-  border-radius: 0.625rem; // 10px/16
+  border-radius: 0.625rem;
   padding: 1.5rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 
@@ -184,7 +184,7 @@ body {
       justify-content: space-between;
       align-items: center;
       padding: 1rem 0;
-      border-bottom: 0.0625rem solid #eee; // 1px
+      border-bottom: 0.0625rem solid #eee;
 
       &:last-child {
         border-bottom: none;
@@ -201,8 +201,8 @@ body {
           gap: 0.5rem;
 
           i {
-            width: 1.875rem; // 30px/16
-            height: 1.875rem; // 30px/16
+            width: 1.875rem;
+            height: 1.875rem;
             background: #f0f0f0;
             border-radius: 50%;
             display: flex;

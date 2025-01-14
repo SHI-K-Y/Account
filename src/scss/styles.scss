@@ -1,13 +1,9 @@
-// Base styles and variables
 @import "./variables";
 
-// Common styles
 @import "./common";
 
-// Layout components
 @import "./account-nav";
 
-// Page specific styles
 @import "./overview";
 @import "./transactions";
 @import "./category";

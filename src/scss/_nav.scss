@@ -5,7 +5,7 @@ body {
 }
 
 .content-wrapper {
-  margin-left: 15.625rem; // 保持 250px/16
+  margin-left: 15.625rem;
   padding: 2em;
 }
 
@@ -24,7 +24,7 @@ body {
   .date-selector button {
     padding: 0.8em 1.5em;
     background: white;
-    border: 0.0625rem solid #ddd; // 保持精確的 1px
+    border: 0.0625rem solid #ddd;
     border-radius: 0.5em;
     cursor: pointer;
 
@@ -40,8 +40,6 @@ body {
   padding: 1.5em;
   margin-bottom: 2em;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-
-  // ...existing code...
 }
 
 .assets-grid {
@@ -49,8 +47,6 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
   gap: 1.5em;
   margin-bottom: 2em;
-
-  // ...existing code...
 }
 
 .recent-transactions {
@@ -58,13 +54,9 @@ body {
   border-radius: 0.625em;
   padding: 1.5em;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-
-  // ...existing code...
 }
 
-// Responsive styles
 @media (max-width: 48em) {
-  // 768px/16
   .content-wrapper {
     margin-left: 0;
     padding: 1em;

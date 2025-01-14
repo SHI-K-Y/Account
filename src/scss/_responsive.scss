@@ -1,11 +1,9 @@
-// Mixin for media queries
 @mixin respond-to($breakpoint) {
   @media only screen and (max-width: 900px) {
     @content;
   }
 }
 
-// Home page responsive styles
 .logo {
   @include respond-to("medium") {
     font-size: 1.5rem !important;
@@ -74,7 +72,6 @@
   }
 }
 
-// Login page responsive styles
 .glass-container {
   @include respond-to("small") {
     width: 90%;
@@ -83,7 +80,6 @@
   }
 }
 
-// Footer responsive styles
 footer {
   @include respond-to("medium") {
     .nav-link {
@@ -98,7 +94,6 @@ footer {
   }
 }
 
-// Hamburger menu for mobile
 .mobile-menu-toggle {
   display: none;
   cursor: pointer;
@@ -110,7 +105,6 @@ footer {
   }
 }
 
-// Mobile navigation menu
 .mobile-nav {
   display: none;
   position: fixed;

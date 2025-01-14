@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // 導航選單切換
   const menuToggle = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector(".nav-menu");
   const navOverlay = document.querySelector(".nav-overlay");
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   navOverlay.addEventListener("click", toggleMenu);
 
-  // 點擊導覽項目時關閉選單（在手機版）
   const navItems = document.querySelectorAll(".nav-item a");
   navItems.forEach((item) => {
     item.addEventListener("click", function () {
@@ -27,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // 監聽視窗大小變化
   window.addEventListener("resize", function () {
     if (window.innerWidth > 768) {
       navMenu.classList.remove("active");
@@ -36,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // 類別編輯模態框
   const editBtns = document.querySelectorAll(".edit-btn");
   const modal = document.getElementById("editModal");
   const modalOverlay = document.querySelector(".modal-overlay");
@@ -47,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // 關閉模態框
   if (modal) {
     window.addEventListener("click", function (e) {
       if (e.target === modal) {
@@ -56,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // 交易類型切換
   const typeBtns = document.querySelectorAll(".type-btn");
   typeBtns.forEach((btn) => {
     btn.addEventListener("click", function () {
