@@ -1,17 +1,11 @@
-@mixin respond-to($breakpoint) {
-  @media only screen and (max-width: 900px) {
-    @content;
-  }
-}
-
 .logo {
-  @include respond-to("medium") {
+  @media only screen and (max-width: 900px) {
     font-size: 1.5rem !important;
   }
 }
 
 .navbar {
-  @include respond-to("medium") {
+  @media only screen and (max-width: 900px) {
     padding: 0.8rem 1rem;
 
     .nav-links {
@@ -26,7 +20,7 @@
 }
 
 .main-content {
-  @include respond-to("medium") {
+  @media only screen and (max-width: 900px) {
     padding: 4rem 1rem;
     min-height: 0 !important;
     margin-top: 0px !important;
@@ -47,7 +41,7 @@
 }
 
 .contact-form {
-  @include respond-to("medium") {
+  @media only screen and (max-width: 900px) {
     flex-direction: column;
     gap: 1rem;
 
@@ -66,14 +60,14 @@
 .instructions,
 .faq,
 .contact {
-  @include respond-to("medium") {
+  @media only screen and (max-width: 900px) {
     padding: 1.5rem;
     margin: 1rem;
   }
 }
 
 .glass-container {
-  @include respond-to("small") {
+  @media only screen and (max-width: 600px) {
     width: 90%;
     max-width: 350px;
     margin: 1rem;
@@ -81,7 +75,7 @@
 }
 
 footer {
-  @include respond-to("medium") {
+  @media only screen and (max-width: 900px) {
     .nav-link {
       flex-wrap: wrap;
       gap: 0.5rem;
@@ -99,7 +93,7 @@ footer {
   display: none;
   cursor: pointer;
 
-  @include respond-to("medium") {
+  @media only screen and (max-width: 900px) {
     display: block;
     font-size: 1.5rem;
     color: var(--logo-color);
