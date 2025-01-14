@@ -87,8 +87,9 @@ footer {
       gap: 0.5rem;
 
       a {
-        width: calc(50% - 0.5rem);
         text-align: center;
+        justify-content: center;
+        display: flex;
       }
     }
   }
