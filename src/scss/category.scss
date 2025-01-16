@@ -34,7 +34,7 @@ body {
       text-decoration: none;
       color: #666;
       border-radius: 0.5rem;
-      transition: all 0.3s;
+      transition: all 0.3s, background-color 0.3s, transform 0.3s;
 
       &.active {
         background: #000;
@@ -43,6 +43,7 @@ body {
 
       &:hover:not(.active) {
         background: #f0f0f0;
+        transform: scale(1.05);
       }
     }
   }
@@ -61,9 +62,15 @@ body {
     align-items: center;
     padding: 1rem;
     border-bottom: 0.0625rem solid #eee;
+    transition: background-color 0.3s, transform 0.3s;
 
     &:last-child {
       border-bottom: none;
+    }
+
+    &:hover {
+      background-color: #f9f9f9;
+      transform: scale(1.02);
     }
 
     .category-info {

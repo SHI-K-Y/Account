@@ -35,10 +35,11 @@ body {
     border: none;
     border-radius: 0.5rem;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 
     &:hover {
       background: #333;
+      transform: scale(1.05);
     }
   }
   .add-btn.mobile-only {
@@ -66,10 +67,11 @@ body {
       border: none;
       border-radius: 0.5rem;
       text-decoration: none;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s, transform 0.3s;
 
       &:hover {
         background: #333;
+        transform: scale(1.05);
       }
     }
 
@@ -119,10 +121,11 @@ body {
     align-items: center;
     padding: 1rem;
     border-bottom: 0.0625rem solid #eee;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 
     &:hover {
       background-color: #f9f9f9;
+      transform: scale(1.02);
     }
 
     .transaction-info {
