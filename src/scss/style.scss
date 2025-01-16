@@ -30,6 +30,26 @@ body {
   font-size: 1rem;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -41,12 +61,14 @@ body {
   top: 0;
   width: 100%;
   z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
   color: var(--logo-color);
+  animation: slideIn 0.5s ease-in-out;
 }
 
 .nav-links {
@@ -67,6 +89,7 @@ body {
 
   &:hover {
     color: var(--logo-color);
+    transform: scale(1.1);
   }
 }
 
@@ -83,6 +106,7 @@ body {
     background: var(--button-hover-background);
     border: 0.09375rem solid var(--button-background);
     color: var(--button-background);
+    transform: scale(1.05);
   }
 }
 
@@ -95,6 +119,7 @@ body {
   margin-top: 5rem;
   text-align: center;
   margin-left: 0;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .title {
@@ -162,6 +187,7 @@ body {
   &:hover {
     background: var(--logo-color);
     color: white;
+    transform: scale(1.05);
   }
 }
 
@@ -180,6 +206,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .faq-item {
@@ -197,6 +224,7 @@ body {
 
   &:hover {
     background: var(--faq-item-hover-background);
+    transform: scale(1.02);
   }
 
   &.active .faq-answer {
@@ -258,6 +286,7 @@ body {
     background: var(--button-hover-background);
     border: 1px solid var(--button-background);
     color: var(--button-background);
+    transform: scale(1.05);
   }
 }
 
@@ -276,6 +305,7 @@ footer {
   background: var(--background-color);
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
   margin-top: 2rem;
+  animation: fadeIn 1s ease-in-out;
 
   .nav-link {
     display: flex;
